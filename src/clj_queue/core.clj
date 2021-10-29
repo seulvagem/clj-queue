@@ -15,7 +15,7 @@
 
 (defn queue?
   [x]
-  (= (type x) clojure.lang.PersistentQueue))
+  (instance? clojure.lang.PersistentQueue x))
 
 (def ?
   "alias for queue?"
